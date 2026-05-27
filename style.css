@@ -63,6 +63,39 @@ body{
     mix-blend-mode:multiply;
 }
 
+.hero-section {
+    position: relative;
+}
+
+.hero-arrow-left,
+.hero-arrow-right {
+    position: absolute;
+    top: 50%;
+    background-color: #59ab6e;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.hero-arrow-left {
+    left: -70px;
+}
+
+.hero-arrow-right {
+    right: -30px;
+}
+
+.hero-arrow-left:hover,
+.hero-arrow-right:hover {
+    background-color: #218838;
+}
+
 .middle-section{
     padding:60px 0;
     text-align:center;
@@ -249,4 +282,6 @@ body{
     justify-content: flex-end;
     align-items: center;
     margin-bottom: 20px;
+    margin-left: auto;
+    padding-right: 10px;
 }
